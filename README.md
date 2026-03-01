@@ -40,3 +40,10 @@ We analyze:
 ## Goal
 
 To understand how damping and stochastic perturbations modify the qualitative behavior of nonlinear dynamical systems.
+## Results
+
+### Phase Plane
+![Phase Plane](phase_plane.png)
+
+### Distance to Equilibrium
+![Distance](distance_plot.png)
