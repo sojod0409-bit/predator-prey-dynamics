@@ -47,3 +47,32 @@ To understand how damping and stochastic perturbations modify the qualitative be
 
 ### Distance to Equilibrium
 ![Distance](distance_plot.png)
+---
+
+## Mathematical Stability Analysis
+
+For the damped system:
+
+x' = x(2 - y) - αx²  
+y' = y(x - 1)
+
+The interior equilibrium is:
+
+(1, 2 - α)
+
+The Jacobian matrix evaluated at the equilibrium gives:
+
+Trace = -α  
+Determinant = 2 - α  
+
+For 0 < α < 2:
+
+- Trace < 0  
+- Determinant > 0  
+
+This implies local asymptotic stability.
+
+For α = 0.1, the discriminant is negative, leading to complex eigenvalues with negative real part.  
+Therefore, the equilibrium is a **stable spiral (spiral sink)**.
+
+This explains the numerical observations.
